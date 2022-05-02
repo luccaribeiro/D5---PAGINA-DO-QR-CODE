@@ -20,10 +20,8 @@ html {
 .box-branca {
   display: flex;
   background-color: white;
-  width: 440px;
-  height: 560px;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  width: 28em;
+  height: 40em;
   align-items: center;
   justify-content: center;
   border-radius: 25px;
@@ -31,22 +29,57 @@ html {
 }
 
 .box-branca img {
-  width: 400px;
-  height: 400px;
+  width: 26em;
+  height: 27em;
   border-radius: 15px;
 }
 .box-branca h1 {
   text-align: center;
   font-size: 1.8rem;
-  margin: 0 40px;
-  margin-top: 20px;
   color: hsl(218, 44%, 22%);
+  margin: 20px;
 }
 
 .box-branca p {
   text-align: center;
-  margin-bottom: 10px;
   font-size: 1.2rem;
-  margin: 20px 40px;
   color: hsl(212, 45%, 89%);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .box-branca {
+    width: 14em;
+    height: 22em;
+  }
+
+  .box-branca img {
+    width: 12em;
+    height: 12em;
+  }
+  .box-branca h1 {
+    font-size: 1rem;
+  }
+
+  .box-branca p {
+    font-size: 0.7rem;
+  }
+}
+@media (max-height: 700px) {
+  .box-branca {
+    width: 18em;
+    height: 27em;
+  }
+
+  .box-branca img {
+    width: 16em;
+    height: 15em;
+  }
+  .box-branca h1 {
+    font-size: 1.4rem;
+  }
+
+  .box-branca p {
+    font-size: 0.7rem;
+  }
 }
